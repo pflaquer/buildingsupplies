@@ -6,24 +6,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Powertron Supply Co. | NYC Industrial Supplies</title>
   
-  <style>
-    .logo{
-  width:200px;
-  height:150px;
-  border-radius:25%;
-  border-style:solid;
-  border-color:orange;
-  border-width:5px;
-  
-}
-  </style>
+    <style>
+        .logo {
+            width: 200px;
+            height: 150px;
+            border-radius: 25%;
+            border-style: solid;
+            border-color: orange;
+            border-width: 5px;
+        }
+        /* Hero Background Overlay Style */
+        .hero-bg {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                              url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
     <!-- Navbar -->
     <header class="bg-white border-b border-gray-200 p-4 sticky top-0 z-50">
         <nav class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-900 tracking-tight"><img src="https://raw.githubusercontent.com/pflaquer/buildingsupplies/refs/heads/main/powertron.png" class="logo"></img></h1>
+            <h1 class="text-2xl font-bold text-blue-900 tracking-tight">
+                <img src="https://raw.githubusercontent.com/pflaquer/buildingsupplies/refs/heads/main/powertron.png" class="logo" alt="Powertron Logo">
+            </h1>
             <div class="flex items-center gap-4">
                 <ul class="hidden md:flex gap-2 font-medium">
                     <li><a href="#" class="px-4 py-1.5 border border-blue-900 text-blue-900 rounded-full hover:bg-blue-900 hover:text-white transition">HOME</a></li>
@@ -38,18 +46,16 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto py-16 px-4 text-center">
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-blue-900">NYC's Trusted Source for Obsolete & Hard-to-Find Parts<br>
-          <span style="font-size:200%;color:yellow;">★</span><span style="font-size:200%;color:yellow;">★</span><span style="font-size:200%;color:yellow;">★</span><span style="font-size:200%;color:yellow;">★</span><span style="font-size:200%;color:yellow;">★</span>
-        </h2>
-      <br>
-      
-        <p class="text-xl text-gray-600 mb-8">Same-day and weekend emergency delivery across New York City. 
-
-</p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <button class="bg-blue-900 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-800 transition">Request Emergency Part</button>
-            <button class="border-2 border-blue-900 text-blue-900 px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-50 transition">View Catalog</button>
+    <section class="hero-bg py-24 px-4 text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 text-blue-900">NYC's Trusted Source for Obsolete & Hard-to-Find Parts<br>
+              <span style="font-size:100%;color:orange;">★★★★★</span>
+            </h2>
+            <p class="text-xl text-gray-800 mb-8 font-medium">Same-day and weekend emergency delivery across New York City.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-blue-900 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-800 transition">Request Emergency Part</button>
+                <button class="border-2 border-blue-900 text-blue-900 px-8 py-4 rounded-lg text-lg font-bold hover:bg-blue-50 transition">View Catalog</button>
+            </div>
         </div>
     </section>
 
@@ -100,10 +106,10 @@
     <section class="max-w-6xl mx-auto py-16 px-4">
         <h3 class="text-2xl font-bold text-center text-blue-900 mb-12">Trusted Industry Partners</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-70">
-            <div class="flex justify-center p-4"><div class="w-32 h-16 bg-gray-200 rounded flex items-center justify-center font-bold text-gray-500"><img src="https://static.wixstatic.com/media/5fdfe7_5def0982ebb444ddbf32fd61c9b2de0b~mv2.png/v1/fill/w_338,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/stanley.png"></img></div></div>
-            <div class="flex justify-center p-4"><div class="w-32 h-16 bg-gray-200 rounded flex items-center justify-center font-bold text-gray-500"><img src="https://static.wixstatic.com/media/5fdfe7_1d9091a0458b41b49f2d79c2e7066393~mv2.jpg/v1/fill/w_252,h_252,al_c,lg_1,q_80,enc_avif,quality_auto/th.jpg"></img></div></div>
-            <div class="flex justify-center p-4"><div class="w-32 h-16 bg-gray-200 rounded flex items-center justify-center font-bold text-gray-500"><img src="https://static.wixstatic.com/media/5fdfe7_8eb2fdad92b349e4919def57510b8b76~mv2.png/v1/fill/w_404,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/watlow-logo.png"></img></div></div>
-            <div class="flex justify-center p-4"><div class="w-32 h-16 bg-gray-200 rounded flex items-center justify-center font-bold text-gray-500"><img src="https://static.wixstatic.com/media/5fdfe7_59773fb99b6a4023bf35adecfdbaf08b~mv2.jpg/v1/fill/w_296,h_82,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/t_500x300.jpg"></img></div></div>
+            <div class="flex justify-center p-4"><img src="https://static.wixstatic.com/media/5fdfe7_5def0982ebb444ddbf32fd61c9b2de0b~mv2.png/v1/fill/w_338,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/stanley.png" alt="Brand 1"></div>
+            <div class="flex justify-center p-4"><img src="https://static.wixstatic.com/media/5fdfe7_1d9091a0458b41b49f2d79c2e7066393~mv2.jpg/v1/fill/w_252,h_252,al_c,lg_1,q_80,enc_avif,quality_auto/th.jpg" alt="Brand 2"></div>
+            <div class="flex justify-center p-4"><img src="https://static.wixstatic.com/media/5fdfe7_8eb2fdad92b349e4919def57510b8b76~mv2.png/v1/fill/w_404,h_92,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/watlow-logo.png" alt="Brand 3"></div>
+            <div class="flex justify-center p-4"><img src="https://static.wixstatic.com/media/5fdfe7_59773fb99b6a4023bf35adecfdbaf08b~mv2.jpg/v1/fill/w_296,h_82,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/t_500x300.jpg" alt="Brand 4"></div>
         </div>
     </section>
 
